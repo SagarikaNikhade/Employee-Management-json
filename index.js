@@ -16,8 +16,8 @@ app.use(express.json());
 // app.use("/users", userRouter);
 
 // app.use(auth);
-app.get("/",()=>{
-    res.send("Welcome")
+app.get("/",(req,res)=>{
+    res.send("welcome")
 })
 // Dash
 app.use("/employees", dashRouter);
