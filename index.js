@@ -16,6 +16,9 @@ app.use(express.json());
 // app.use("/users", userRouter);
 
 // app.use(auth);
+app.get("/",()=>{
+    resizeBy.send("Welcome")
+})
 // Dash
 app.use("/employees", dashRouter);
 
