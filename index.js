@@ -13,9 +13,9 @@ const { dashRouter } = require("./routes/dashboard.route");
 app.use(cors());
 app.use(express.json());
 // user
-app.use("/users", userRouter);
+// app.use("/users", userRouter);
 
-app.use(auth);
+// app.use(auth);
 // Dash
 app.use("/employees", dashRouter);
 
